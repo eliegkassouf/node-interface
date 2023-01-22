@@ -6,8 +6,8 @@
 
 
 
+### My preferred method (depends on your version). 
 ```
-// My preferred method (depends on your version). 
 // Being able to enforce the variable type is key here 
 // (using tools like IntelliJ/Webstorm will help you auto generate getters and setters easily).
 // I understand that not everyone has this luxury -> fallback posted below. 
@@ -42,19 +42,18 @@ class UserInterface {
 ```
   
   
+### Fallback if you're using an older version
 ```
 class UserInterface {
   
-  // Fallback
   _test1;
-  getTest1() { return this._test1; }
-  setTest1(value) { this._test1 = value; }
+  get test1() { return this._test1; }
+  set test1(value) { this._test1 = value; }
 
   _test2;
-  getTest2() { return this._test2; }
-  setTest2(value) { this._test2 = value; }
+  get test2() { return this._test2; }
+  set test2(value) { this._test2 = value; }
 
-  // Comes in handy for various reasons.
   serialize() {
     return {
       test1: this._test1,
@@ -75,12 +74,23 @@ class UserInterface {
 ```
 
 
+### Interface (Variable)
 ```
 // You could define in the same file if the project is small
 // otherwise I recommend the interface is placed on its own.
-const newUser = new UserInterface("test1", 100);
+
+const newEmptyUser = new UserInterface(); // -> Empty (Constructor is optional in this case)
+newEmptyUser.test1 = "test1";
+newEmptyUser.test2 = 100;
+const serializedData1 = newEmptyUser.serialize();
+
+const newUser = new UserInterface("test1", 100); // -> Default Values 
+const serializedData2 = newUser.serialize();
 ```
 
+
+
+### Interface Extending Class
 ```
 // You can set this up however you like. Enjoy!
 class DemoClass extends UserInterface {
@@ -97,3 +107,5 @@ class DemoClass extends UserInterface {
   
 }
 ```
+
+
