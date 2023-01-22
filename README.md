@@ -24,8 +24,8 @@ class UserInterface {
   // Comes in handy for various reasons.
   serialize() {
     return {
-      test1: this.test1,
-      test2: this.test2
+      test1: this._test1,
+      test2: this._test2
     }
   }
   
@@ -57,8 +57,8 @@ class UserInterface {
   // Comes in handy for various reasons.
   serialize() {
     return {
-      test1: this.getTest1(),
-      test2: this.getTest2()
+      test1: this._test1,
+      test2: this._test2
     }
   }
 
