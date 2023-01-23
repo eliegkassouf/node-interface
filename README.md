@@ -1,6 +1,6 @@
 ### node-interface (Interface Structure Example for NodeJS)
 
-- ❓ On a large projects or teams, interfaces provide a critical abstraction. It helps us auto generate documentation and allows architechs/engineers/leads to focus on as a tool to keep code quality known and functionality expected. 
+- ❓ On a large projects or teams, interfaces provide a critical abstraction. They helps us auto generate documentation and allows architechs/engineers/leads to focus on as a tool to keep code quality known and functionality expected. 
 - ‼️ If you're using Angular there is a better way to define and use interfaces (please consult the angular docs). This example is specifically for Node, Express.. (Flow is also another alternative).
 - 🛟 I find this helps reduce technical debt. Just remember to use proper variable names. Don't half ass it and you will thank yourself later if you ever need to maintain.
 
