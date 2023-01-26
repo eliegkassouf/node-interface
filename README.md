@@ -3,7 +3,7 @@
 - ❓ On a large projects or teams, interfaces provide a critical abstraction. They help us to auto generate documentation and allows architechs/engineers/leads to focus on as a tool to keep code quality known and functionality expected. 
 - ‼️ If you're using Angular there is a better way to define and use interfaces (please consult the angular docs). This example is specifically for Node, Express.. (Flow is also another alternative).
 - 🛟 I find this helps reduce technical debt. Just remember to use proper variable names. Don't half ass it and you will thank yourself later if you ever need to maintain.
-- 🙋‍♂️ Why? Something like this may ne useful if you need to communicate back and forth with an Angular App or even an API. It's bascially just a class that we can extend or declare as a variable to re-use throughout the software lifecycle.
+- 🙋‍♂️ Why? Something like this may be useful if you need to communicate back and forth with an Angular App or even an API. It's bascially just a class that we can extend or declare as a variable to re-use throughout the software lifecycle. IDE's will also generate more accurate hints/auto completion based on this "class". 
 
 
 
