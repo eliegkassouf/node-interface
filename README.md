@@ -8,7 +8,7 @@
 
 
 ### My preferred method (depends on your version). 
-```
+```typescript
 // Being able to enforce the variable type is key here 
 // (using tools like IntelliJ/Webstorm will help you auto generate getters and setters easily).
 // I understand that not everyone has this luxury -> fallback posted below. 
@@ -44,7 +44,7 @@ class UserInterface {
   
   
 ### Fallback if you're using an older version
-```
+```javascript
 class UserInterface {
   
   _test1;
@@ -76,7 +76,7 @@ class UserInterface {
 
 
 ### Interface (Variable)
-```
+```javascript
 // You could define in the same file if the project is small
 // otherwise I recommend the interface is placed on its own.
 
@@ -92,7 +92,7 @@ const serializedData2 = newUser.serialize();
 
 
 ### Interface Extending Class
-```
+```javascript
 // You can set this up however you like. Enjoy!
 class DemoClass extends UserInterface {
   
