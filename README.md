@@ -15,6 +15,9 @@ export interface DemoInterface {
 }
 
 // In a different controller/class
+// Being able to use the interface a type
+// is key here especially when you need
+// to reuse it.
 const demoInterface: DemoInterface = {
   test1: "test1",
   test2 : 100
