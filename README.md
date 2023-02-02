@@ -1,5 +1,10 @@
 ### node-interface (Interface Structure Example for NodeJS)
 
+- I have a lot of angular apps and node/java services. 
+- This serves as a quick reference when the two need to communicate because js can become messy quickly.
+- Looks tideous but when you nail down a process, it becomes muscle memory.
+- Depends on what technologies you use, theres a few examples down there (no java examples, if you don't know what a class is yet, check out this [link](https://www.w3schools.com/java/java_classes.asp)
+
 - ❓ On a large projects or teams, interfaces provide a critical abstraction. They help us to auto generate documentation and allows architechs/engineers/leads to focus on as a tool to keep code quality known and functionality expected. 
 - ‼️ If you're using Angular there is a better way to define and use interfaces (please consult the angular docs). This example is specifically for Node, Express.. (Flow is also another alternative).
 - 🛟 I find this helps reduce technical debt. Just remember to use proper variable names. Don't half ass it and you will thank yourself later if you ever need to maintain.
