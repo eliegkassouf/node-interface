@@ -10,10 +10,11 @@
 ### Angular Interface Example
 ```typescript
 export interface DemoInterface {
-    test1: string;
-    test2: number;
+  test1: string;
+  test2: number;
 }
 
+// In a different controller/class
 const demoInterface: DemoInterface = {
   test1: "test1",
   test2 : 100
