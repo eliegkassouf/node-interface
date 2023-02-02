@@ -7,6 +7,27 @@
 
 
 
+### Angular Interface Example
+```typescript
+export interface DemoInterface {
+    test1: string;
+    test2: number;
+}
+
+const demoInterface: DemoInterface = {
+  test1: "test1",
+  test2 : 100
+};
+
+OR
+
+const demoInterface = {
+  test1: "test1",
+  test2 : 100
+} as DemoInterface;
+```
+
+
 ### My preferred method (depends on your version). 
 ```typescript
 // Being able to enforce the variable type is key here 
